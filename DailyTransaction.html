@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Transaction Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Creating 20 rows -->
+            <script>
+                for (let i = 0; i < 20; i++) {
+                    document.write('<tr>');
+                    for (let j = 0; j < 4; j++) {
+                        document.write('<td><input type="text"></td>');
+                    }
+                    document.write('</tr>');
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>
